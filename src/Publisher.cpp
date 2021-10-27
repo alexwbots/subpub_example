@@ -6,7 +6,7 @@ int main(int argc, char **argv)
 {
   ros::init(argc, argv, "publisher");
   ros::NodeHandle n;
-  ros::Publisher chatter_pub = n.advertise<std_msgs::Float64>("counter", 1);
+  ros::Publisher pub = n.advertise<std_msgs::Float64>("counter", 1);
   ros::Rate loop_rate(2);
 
   int count = 0;
@@ -16,7 +16,7 @@ int main(int argc, char **argv)
     number.data = (float)count;
     ROS_INFO("%f", number.data);
 
-    chatter_pub.publish(number);
+    pub.publish(number);
     ros::spinOnce();
     loop_rate.sleep();
     ++count;
