@@ -8,7 +8,7 @@ $ catkin_make
 
 Compile just one package:
 ```
-catkin_make --only-pkg-with-deps subpub_example
+$ catkin_make --only-pkg-with-deps subpub_example
 ```
 The run the example nodes:
 ```
