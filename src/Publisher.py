@@ -6,7 +6,7 @@ if __name__ == "__main__":
 
   rospy.init_node('publisher')
   pub = rospy.Publisher('counter', Float64, queue_size=1)
-  rate = rospy.Rate(2) # 5 Hz
+  rate = rospy.Rate(2) # 2 Hz
   
   count = 0
   
