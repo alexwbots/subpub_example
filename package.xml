@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>subpub_example</name>
-  <version>1.0.0</version>
-  <description>This package is for example of ros nodes publishers and subscribers in python and C++</description>
+  <version>3.0.0</version>
+  <description>This package is for example of ros nodes publishers and subscribers in python and C++, using ROS Noetic</description>
 
   <maintainer email="lopez.alexander@pucp.edu.pe">Alexander Lopez</maintainer>
   <license>BSD</license>
