@@ -22,10 +22,9 @@ if __name__ == "__main__":
     msg = String()
     
     if (resultado % 2 == 0):
-      enunciado = "Valor par"
+      msg.data = "Valor par"
     else:
-      enunciado = "Valor impar"
+      msg.data = "Valor impar"
     
-    msg.data = enunciado
     pub.publish(msg)
     rate.sleep()
