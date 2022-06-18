@@ -4,7 +4,7 @@ from std_msgs.msg import Float64
 
 def funcion(msg): # Tipo callback
   resultado = msg.data  
-  print resultado
+  print(resultado)
 
 if __name__ == "__main__":
 
