@@ -19,12 +19,12 @@ if __name__ == "__main__":
   
   while not rospy.is_shutdown():
     
-    msg = String()
+    message = String()
     
     if (resultado % 2 == 0):
-      msg.data = "Valor par"
+      message.data = "Valor par"
     else:
-      msg.data = "Valor impar"
+      message.data = "Valor impar"
     
-    pub.publish(msg)
+    pub.publish(message)
     rate.sleep()
