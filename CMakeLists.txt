@@ -211,6 +211,9 @@ target_link_libraries(publisher ${catkin_LIBRARIES})
 add_executable(subscriber src/Subscriber.cpp)
 target_link_libraries(subscriber ${catkin_LIBRARIES})
 
+add_executable(pubsub src/Pubsub.cpp)
+target_link_libraries(pubsub ${catkin_LIBRARIES})
+
 add_executable(class_pub src/class_publisher.cpp)
 target_link_libraries(class_pub ${catkin_LIBRARIES})
 
